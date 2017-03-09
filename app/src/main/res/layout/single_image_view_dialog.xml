@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSilver">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="288dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="210dp"
+            android:id="@+id/single_image_view"
+            android:src="@drawable/samsung_np350e7c_300"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_price"
+            android:text="Mobile Price"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/single_image_view" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diloag_liner_layout"
+            android:layout_below="@+id/mobile_price">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Now"
+                android:textColor="@color/colorWhite"
+
+                android:id="@+id/buy_later"
+                android:layout_weight="1"
+                android:background="@drawable/dilaogbuttons"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buy_this_mobile"
+                android:text="Buy Now"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+
+                android:background="@drawable/dilaogbuttons"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="ranglerz.com.laptophub.LaptopsList"
+    android:background="@color/colorSilver">
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/arrow_right"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/left_arrow"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/arrow_left"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/right_arrow"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="You Have Bought All Laptops"
+        android:id="@+id/allbought"
+        android:textSize="25dp"
+        android:visibility="gone"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/h_scrol_view">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/beard_for_sell_linear_layout"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_layout_1">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:id="@+id/iv_laptop1"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_laptop1"
+                    android:text="TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/iv_laptop1"/>
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tv_laptop_line1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/tv_laptop1"
+                    android:background="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_laptop_price1"
+                    android:layout_below="@+id/tv_laptop_line1"
+                    android:text="Price: "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginRight="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="$000"
+                    android:id="@+id/tv_price1"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_laptop_price1"
+                    android:layout_below="@+id/tv_laptop_line1"
+                    />
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tv_laptop_line4"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/tv_laptop_price1"
+                    android:background="@color/colorBlack"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_addtocart1"
+                    android:background="@drawable/dilaogbuttons"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="Buy This"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_layout_2">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:id="@+id/iv_laptop2"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_laptop2"
+                    android:text="TESTe TESTe TESTe TESTe TESTe TESTe TESTe TESTe TESTe TESTe TESTe TESTe"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/iv_laptop2"/>
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tv_laptop_line2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/tv_laptop2"
+                    android:background="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_laptop_price2"
+                    android:layout_below="@+id/tv_laptop_line2"
+                    android:text="Price: "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="$000"
+                    android:id="@+id/tv_price2"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_laptop_price2"
+                    android:layout_below="@+id/tv_laptop_line2"
+                    />
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tv_laptop_line5"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/tv_laptop_price2"
+                    android:background="@color/colorBlack"/>/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_addtocart2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Buy This"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/dilaogbuttons"
+                    android:layout_marginBottom="8dp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_layout_3">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:id="@+id/iv_laptop3"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_laptop3"
+                    android:text="TES TES TES TES TES TES TES TES TES TES TES TES"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/iv_laptop3"/>
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tv_laptop_line3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/tv_laptop3"
+                    android:background="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_laptop_price3"
+                    android:layout_below="@+id/tv_laptop_line3"
+                    android:text="Price: "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="$000"
+                    android:id="@+id/tv_price3"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_laptop_price3"
+                    android:layout_below="@+id/tv_laptop_line3"
+                    />
+
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tv_laptop_line6"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/tv_laptop_price3"
+                    android:background="@color/colorBlack"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_addtocart3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Buy This"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/dilaogbuttons"
+                    android:layout_marginBottom="8dp"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
+</RelativeLayout>
+

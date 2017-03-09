@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSilver">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+
+        <Button
+            android:text="OK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_ok"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/dilaogbuttons"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_customer_phon"
+            android:hint="Enter Your Mobile Number"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cutomer_address"
+            android:hint="Enter Your Delivery Address"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_below="@+id/ed_customer_phon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
